@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4em;
+    transition: all;
+    transition-duration: 500ms;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 5px;
+    overflow: auto;
+    background: wheat;
+}
+
+aside {
+    float: right;
+    width: 20%;
+}
+
+h2, h3 {
+    color: #189AB4;
+}
+
+p {
+    text-align: justify;
+}
+
+#content {
+    float: left;
+    width: 80%;
+}
+
+.card {
+    box-shadow: 0px 4px 8px 0 slategrey;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px 10px 0 10px;
+    background: whitesmoke;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header start */
+header {
+    display: inline;
+}
+
+#judul img{
+    width: 125px;
+    align-items: center;
+}
+
+#judul {
+    text-align: center;
+    color: black;
+    background-color: #75E6DA;
+    padding: 25px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+/* Navigation start */
+nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+#tab-menu ul {
+    width: fit-content;
+}
+
+#tab-menu li a {
+    color: #75E6DA;
+    padding: 5px;
+    border-radius: 100px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#tab-menu li a:hover {
+    color: #05445E;
+    background-color: #D4F1F4;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#tab-menu li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 10em;
+}
+
+#tab-menu a {
+    text-decoration: none;
+}
+/* Navigation end */
+
+/* Float menu start */
+#float-menu {
+    background-color: wheat;
+    width: 200px;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
+    right: 1em;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.float-menu {
+    position: absolute;
+}
+
+.float-menu-fixed {
+    position: fixed;
+    z-index: 9999;
+    top: 4em;
+}
+
+#float-menu li {
+    margin: 1em;
+    list-style-type: none;
+}
+
+#float-menu li a {
+    color: #000000;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#float-menu li a:hover {
+    color: white;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#hamburger {
+    float: right;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    cursor: pointer;
+    display: none;
+}
+
+.line-1 {
+    transition: all ease-in-out;
+    transition-duration: 300ms;
+    transform-origin: top left;
+}
+
+.line-2 {
+    transition-duration: 300ms;
+    transition: all ease-in-out;
+}
+
+.line-3 {
+    transition: all ease-in-out;
+    transition-duration: 300ms;
+    transform-origin: bottom left;
+}
+
+.line-1, .line-2, .line-3 {
+    width: 30px;
+    height: 0.15em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    background-color: black;
+    border-radius: 1000px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.hamburger-active>.line-1 {
+    transform: rotate(45deg);
+}
+
+.hamburger-active>.line-2 {
+    transform: scale(0.0);
+}
+
+.hamburger-active>.line-3 {
+    transform: rotate(-45deg);
+}
+/* Hamburger end */
+
+/* About Start */
+#About .title{
+    text-align: center;
+}
+
+#About .title img{
+    width: 70%;
+    border: #000000 4px solid;
+}
+
+/* Manager Start */
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 150px;
+    border: black solid 4px;
+    float: left;
+    height: 90%;
+    margin-right: 10px;
+}
+
+/* Manager End */
+
+/* Starting-Lineup start */
+
+.players {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.wrapper-players {
+    background: rgb(59, 116, 167);
+    box-shadow: 0px 0px 5px slategrey;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 300px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.wrapper-players h3{
+    margin-left: 10px;
+    color: black;
+}
+
+.wrapper-players img{
+    width: 90% ; 
+    height: 40%; 
+    border: 5px solid white;
+}
+
+.wrapper-players p{
+    text-align: center;
+}
+
+/* Starting-lineup end */
+
+/* Stadium start */
+.photo {
+    width: 100%;
+    max-height: fit-content;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* Maps button start */
+.maps {
+    background-color: #75E6DA;
+    border-style: none;
+    border-radius: 100em;
+    width: 10em;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    transition: all;
+    transition-duration: 300ms;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #05445E;
+}
+
+.maps:hover {
+    background-color: #D4F1F4;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+/* Maps button end */
+/* Stadium end */
+
+/* Kit start */
+.jersey {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.Lei-Kit {
+    background: rgb(59, 116, 167);
+    box-shadow: 0px 0px 5px slategrey;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 200px;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+.Lei-Kit img{
+    width: 75%; 
+    height: 80%; 
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.Lei-Kit h3{
+    margin-top: 10px;
+    color: black;
+}
+
+/* Kit end */
+
+/* Biodata start */
+/* Profile photo start */
+figure {
+    margin: 10px;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 100%;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 340px;
+}
+/* Profile photo end */
+
+#biodata {
+    text-align: center;
+}
+
+#biodata p {
+    text-align: center;
+}
+
+#biodata b {
+    color: #189AB4;
+}
+/* Biodata end */
+
+/* Footer start */
+footer {
+    background-color: #189AB4;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+    font-size: small;
+}
+/* Footer end */
+
+/* Back to top button start */
+#back-to-top {
+    text-align: center;
+    border-radius: 9999px;
+    bottom: 1rem;
+    position: fixed;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    right: 1em;
+    background-color: #000000;
+    color: white;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+#back-to-top:hover {
+    background-color: #3e4648;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+#back-to-top span {
+    padding-top: 0.1em;
+}
+/* Back to top button end */
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    #biodata p {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 737.6px) {
+    #tab-menu ul {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+@media (min-width: 737.6px) {
+    #float-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #biodata p {
+        font-size: x-small;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #biodata p {
+        font-size: small;
+    }   
+}
+
+@media screen and (min-width: 1400px) {
+    #biodata p {
+        font-size: medium;
+    }
+}
